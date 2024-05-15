@@ -39,7 +39,7 @@
 
             <!-- Main Content Area -->
             <div class="md:col-span-3 bg-white p-4">
-                @include('options._message')
+                @include('Options._message')
                 <!-- Add Skill Form -->
                 <section id="add-skill" class="mb-8">
                     <h2 class="text-lg font-semibold mb-4">Add Skill</h2>

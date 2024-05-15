@@ -11,7 +11,7 @@ class adminController extends Controller
     {
         if ($request->code == 'iBOY') {
             $messages = contacts::latest()->get();
-            return view('admin.dashboard', compact('messages'));
+            return view('Admin.dashboard', compact('messages'));
         } else {
             return redirect()->back()->with('error', 'Invalid credentials!');
         }
