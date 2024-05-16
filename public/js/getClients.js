@@ -4,6 +4,12 @@ $(document).ready(function () {
         method: 'GET',
         success: function (data) {
             data.forEach(function (client) {
+                /**
+                 * Represents a client element.
+                 *
+                 * @type {jQuery}
+                 * @name clientElement
+                 */
                 var clientElement = $('<div></div>')
                     .addClass('client-item p-4 bg-white shadow rounded m-5 text-center')
                     .append($('<img>').attr('src', client.url).addClass('w-12 h-12 mb-2'))

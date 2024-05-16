@@ -7,12 +7,23 @@ use App\Models\clients;
 
 class clientsController extends Controller
 {
+    /**
+     * Get all clients.
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
     public function getClients()
     {
         $clients = clients::all();
         return $clients;
     }
 
+    /**
+     * Store a new client.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function store(Request $request)
     {
         $clients = new clients();

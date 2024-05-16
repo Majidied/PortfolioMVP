@@ -9,6 +9,8 @@ class projectsController extends Controller
 {
     /**
      * Display a listing of the resource.
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function getProjects()
     {
@@ -16,6 +18,12 @@ class projectsController extends Controller
         return $projects;
     }
 
+    /**
+     * Add a new project.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function addproject(Request $request)
     {
         $project = new projects();
@@ -29,6 +37,8 @@ class projectsController extends Controller
 
     /**
      * Show the form for creating a new resource.
+     *
+     * @return void
      */
     public function create()
     {
@@ -37,6 +47,9 @@ class projectsController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
      */
     public function store(Request $request)
     {
@@ -45,6 +58,9 @@ class projectsController extends Controller
 
     /**
      * Display the specified resource.
+     *
+     * @param  \App\Models\projects  $projects
+     * @return void
      */
     public function show(projects $projects)
     {
@@ -53,6 +69,9 @@ class projectsController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\projects  $projects
+     * @return void
      */
     public function edit(projects $projects)
     {
@@ -61,6 +80,10 @@ class projectsController extends Controller
 
     /**
      * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\projects  $projects
+     * @return void
      */
     public function update(Request $request, projects $projects)
     {
@@ -69,6 +92,9 @@ class projectsController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\projects  $projects
+     * @return void
      */
     public function destroy(projects $projects)
     {

@@ -1,12 +1,12 @@
 // contact_form.js
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    // Empêcher le comportement de soumission par défaut du formulaire
-    // event.preventDefault();
-
-    // Récupérer les données du formulaire
     var name = event.target.elements.name.value;
     var email = event.target.elements.email.value;
+    /**
+     * The message entered by the user in the contact form.
+     * @type {string}
+     */
     var message = event.target.elements.message.value;
 
     // Envoyer une requête POST à l'API
@@ -14,8 +14,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            // Si vous utilisez Laravel CSRF protection, ajoutez le token ici
-            // 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
         },
         body: JSON.stringify({
             name: name,

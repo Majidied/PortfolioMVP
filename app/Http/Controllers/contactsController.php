@@ -9,6 +9,8 @@ class contactsController extends Controller
 {
     /**
      * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -17,6 +19,8 @@ class contactsController extends Controller
 
     /**
      * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -25,6 +29,9 @@ class contactsController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -32,28 +39,30 @@ class contactsController extends Controller
         $email = $request->email;
         $message = $request->message;
 
-        // Valider les données du formulaire
+        // Validate the form data
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required'
         ]);
 
-        // Créer un nouveau contact avec les données validées
+        // Create a new contact with the validated data
         $contact = new contacts();
         $contact->name = $name;
         $contact->email = $email;
         $contact->message = $message;
 
-        // Sauvegarder le contact dans la base de données
+        // Save the contact to the database
         $contact->save();
 
-        // Retourner une réponse JSON
+        // Return a JSON response
         return redirect()->back()->with('success', 'Message sent successfully!');
     }
 
     /**
-     * Display a listing of the resource.
+     * Display a listing of all messages.
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
      */
     public function getAllMessages()
     {
@@ -61,10 +70,11 @@ class contactsController extends Controller
         return $messages;
     }
 
-
-
     /**
      * Display the specified resource.
+     *
+     * @param  \App\Models\contacts  $contacts
+     * @return \Illuminate\Http\Response
      */
     public function show(contacts $contacts)
     {
@@ -73,6 +83,9 @@ class contactsController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\contacts  $contacts
+     * @return \Illuminate\Http\Response
      */
     public function edit(contacts $contacts)
     {
@@ -81,6 +94,10 @@ class contactsController extends Controller
 
     /**
      * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\contacts  $contacts
+     * @return \Illuminate\Http\Response
      */
     public function update(Request $request, contacts $contacts)
     {
@@ -89,6 +106,9 @@ class contactsController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\contacts  $contacts
+     * @return \Illuminate\Http\Response
      */
     public function destroy(contacts $contacts)
     {

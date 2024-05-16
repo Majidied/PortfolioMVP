@@ -1,9 +1,14 @@
 $(document).ready(function () {
     $.ajax({
-        url: '/api/projects', // Assurez-vous que l'URL correspond à votre endpoint pour récupérer les projets
+        url: '/api/projects',
         method: 'GET',
         success: function (data) {
             data.forEach(function (project) {
+                /**
+                 * Represents a project element.
+                 *
+                 * @type {jQuery}
+                 */
                 var projectElement = $('<div></div>')
                     .addClass('bg-white shadow-lg rounded-lg overflow-hidden')
                     .append($('<img>').attr('src', project.image).addClass('w-full h-64 object-cover'))

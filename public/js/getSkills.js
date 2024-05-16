@@ -4,6 +4,10 @@ $(document).ready(function () {
         method: 'GET',
         success: function (data) {
             data.forEach(function (skill) {
+                /**
+                 * Represents a skill element.
+                 * @type {jQuery}
+                 */
                 var skillElement = $('<div></div>')
                     .addClass('skill-item p-4 bg-white shadow rounded m-2 text-center')
                     .append($('<img>').attr('src', skill.url).addClass('w-12 h-12 mb-2'))
