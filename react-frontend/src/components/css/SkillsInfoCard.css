@@ -1,37 +1,12 @@
-.skills-info-card
-{
-    min-height: 15rem;
-    width: 100%;
-    max-height: 15rem;
-    border-radius: 0.65rem;
-    padding: 20px;
-    margin: 20px;
-    border: 1.5px solid #6751b9;
-    background: rgba(22, 17, 47, 0.398);
-    backdrop-filter: blur(1rem);
-    transition: all 0.3s ease-in-out;
-}
+/* SkillsInfoCard.css */
+@media (max-width: 1025px) {
+    .skills-info-card {
+      padding: 2rem;
+    }
+  }
 
-.skills-info-card h6
-{
-    font-weight: 500;
-    padding: 0.8rem 2rem;
-    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    border-bottom: 1.5px #6751b9;
-    font-size: 1.25rem;
-    transition: color 0.3s ease-in-out;
-}
-
-
-.skills-info-card .skill-item {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.skills-info-card .skill-item:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
+  @media (max-width: 768px) {
+    .skills-info-card {
+      margin-bottom: 2rem;
+    }
+  }

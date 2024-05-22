@@ -1,6 +1,7 @@
 export const
     skills = [
         {
+
             title: "Front-End",
             iconUrl: "https://cdn-icons-png.flaticon.com/512/13580/13580920.png",
             skills: [
@@ -21,8 +22,8 @@ export const
                     iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png"
                 },
                 {
-                    title: "Redux",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919853.png"
+                    title: "Angular",
+                    iconUrl: "https://img.icons8.com/?size=512&id=l9a5tcSnBwcf&format=png"
                 },
                 {
                     title: "Sass",
@@ -30,7 +31,7 @@ export const
                 },
                 {
                     title: "Bootstrap",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=PndQWK6M1Hjo&format=png"
                 },
                 {
                     title: "Tailwind",
@@ -44,55 +45,55 @@ export const
             skills: [
                 {
                     title: "Laravel",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=9yPfdIAPFYys&format=png"
                 },
                 {
                     title: "Flask",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919828.png"
+                    iconUrl: "https://img.icons8.com/?size=256&id=ewGOClUtmFX4&format=png"
                 },
                 {
                     title: "Spring Boot",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=90519&format=png"
                 }
             ]
         },
         {
             title: "Databases",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/4241/4241319.png",
+            iconUrl: "https://img.icons8.com/?size=512&id=QSLkbgfcL99d&format=png",
             skills: [
                 {
                     title: "MySQL",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=9nLaR5KFGjN0&format=png"
                 },
                 {
                     title: "MongoDB",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=74402&format=png"
                 },
                 {
                     title: "sqlite3",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919828.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=yjSayFwWHyCo&format=png"
                 },
                 {
                     title: "Json",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=BY2nZtg9LvTP&format=png"
                 }
             ]
         },
         {
             title: "Tools",
-            iconUrl: "https://www.shutterstock.com/image-vector/service-tools-vector-icon-style-260nw-331986134.jpg",
+            iconUrl: "https://img.icons8.com/?size=512&id=21194&format=png",
             skills: [
                 {
                     title: "Git",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=20906&format=png"
                 },
                 {
                     title: "Docker",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                    iconUrl: "https://img.icons8.com/?size=512&id=cdYUlRaag9G9&format=png"
                 },
                 {
-                    title: "Postman",
-                    iconUrl: "https://cdn-icons-png.flaticon.com/512/919/919828.png"
+                    title: "Nginx",
+                    iconUrl: "https://img.icons8.com/?size=512&id=f8puwbhs0kUR&format=png"
                 },
                 {
                     title: "VS Code",
