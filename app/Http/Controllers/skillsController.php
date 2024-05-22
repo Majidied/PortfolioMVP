@@ -14,8 +14,7 @@ class skillsController extends Controller
      */
     public function getSkills()
     {
-        $skills = skills::all();
-        return $skills;
+        return response()->json(skills::all());
     }
 
     /**
