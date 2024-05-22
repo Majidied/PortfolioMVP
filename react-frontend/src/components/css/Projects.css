@@ -1,0 +1,76 @@
+.project-container{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.project-container h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.project-content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding:0 2rem;
+}
+.project-card {
+    background: #130f2a;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border: 1.5px solid #f9f871;
+    background: linear-gradient(145deg, #020a7e, #351a3d);
+}
+
+.project-card h6 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem;
+}
+
+.duration {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background: rgba(103, 81, 185, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    top: 55%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-left span,
+.arrow-right span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.arrow-left {
+right:  0}
+
+.arrow-right {
+    left: 0;
+}

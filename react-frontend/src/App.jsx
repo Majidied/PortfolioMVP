@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 function App() {
     return (
         <div className="overflow-x-hiden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900 ">
@@ -11,6 +12,7 @@ function App() {
             <div className="container mx-auto px-8">
             <Home />
             <Skills />
+            <Projects />
             </div>
         </div>
     );
